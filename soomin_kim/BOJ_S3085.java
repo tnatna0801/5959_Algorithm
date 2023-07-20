@@ -61,7 +61,7 @@ public class BOJ_S3085 {
             for(int j=1; j<candy.length; j++){
                 //가로
                 if(candy[i][j]==candy[i][j-1]) { //같은 색일 때
-                    same+=1;
+                    same++;
                 }
                 else {
                     same = 1;
@@ -74,7 +74,7 @@ public class BOJ_S3085 {
             for (int j = 1; j < candy.length; j++) {
                 //세로
                 if (candy[j][i] == candy[j-1][i]) { //색이 같을 때
-                    same+=1;
+                    same++;
                 }
                 else { //색이 다를 때 
                     same = 1; 

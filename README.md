@@ -19,11 +19,10 @@
 |**[DOCS]**|문서 (문서 추가, 수정, 삭제)|
 |**[CHORE]**|빌드, 설정 파일|
 
-ex) [Type] #이슈번호 커밋메세지 `git commit -m '[python] #12 백준 1237'`
+ex) [PLATFORM] 문제번호. 문제이름 `git commit -m '[BOJ] 1001. A+B'`
 
-## Git Branch
-|브랜치명|작업 내용|
-|:---|:---|
-|**main**|공용|
-|**algo/본인아이디/작업구분(ex.날짜,작업명)**|문제 해결 브랜치|
+## Git Pull Request
+ 1. 이 Repository 를 Fork 한 후, Fork 한 Repository 에서 commit. 이후 Pull Request 해서 이 Repository 에 추가합니다.
+ 2. 자신의 이름으로 된 Directory 를 개설한 후, 그 Directory 내에서 문제를 푼 파일을 넣습니다.
+ 3. Pull Request 이후에는, PR 올린 본인이 자신의 앞뒤 번호 사람들을 Reviewer 로 추가합니다. (8번은 1,7번, 1번은 8,2번)
 

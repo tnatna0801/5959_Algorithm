@@ -10,7 +10,7 @@ public class BOJ_1182 {
     static int n;
     static int[] nums;
 
-    // ÇÕ/¸î¹øÂ° ÀÎµ¦½ºÀÎÁö
+    // ï¿½ï¿½/ï¿½ï¿½ï¿½Â° ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     static void dfs(int sum, int i){
 
         if (i >= n){
@@ -21,8 +21,8 @@ public class BOJ_1182 {
             cnt++;
         }
 
-        dfs(sum+nums[i], i+1); // ÇöÀç ¼ö¸¦ ³Ö´Â °æ¿ì
-        dfs(sum, i+1); // ¾È³Ö´Â °æ¿ì
+        dfs(sum+nums[i], i+1); // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½
+        dfs(sum, i+1); // ï¿½È³Ö´ï¿½ ï¿½ï¿½ï¿½
 
     }
     public static void main(String[] args) throws IOException {

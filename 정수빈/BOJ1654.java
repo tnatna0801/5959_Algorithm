@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class Main {
+public class BOJ1654 {
 
 	static long [] lens;
 	static int K, N;

@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.*;
 
 public class BOJ_S2002_fail {
@@ -32,7 +30,7 @@ public class BOJ_S2002_fail {
             String carNumbers = st.nextToken();
 
             // Queue의 첫번째 원소랑 터널을 나온 차량의 들어올 때 순서와 비교한다. => 올바른 순서
-            if(inTurnel.get(carNumbers) != queue.peek()){
+            if(!inTurnel.get(carNumbers).equals(queue.peek())){
                 count++;
                 queue.remove(inTurnel.get(carNumbers)); // 비교한 차량의 들어온 순서를 삭제
             }

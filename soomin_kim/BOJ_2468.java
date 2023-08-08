@@ -16,7 +16,6 @@ public class BOJ_2468 {
     public static void main(String[] args) throws IOException {
         //1. 입력받기 + 건물 최대 높이 구하기
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
         StringTokenizer st;
 
         st = new StringTokenizer(br.readLine());

@@ -22,20 +22,22 @@ public class BOJ_S1303 {
 		width = Integer.parseInt(st.nextToken()); // 가로크기
 		height = Integer.parseInt(st.nextToken()); // 세로크기
 
+		//입력
 		army = new String[height][width];
 		for (int i = 0; i < height; i++) {
 			army[i] = br.readLine().split("");
 		}
 		
-		int blue = 0;
-		int white = 0;
+		int blue = 0; // 적팀 파워
+		int white = 0; // 우리팀 파워
 		visited =  new boolean[height][width];
 	
+		//for문 돌면서 같은 색깔 탐색
 		for(int y = 0; y < height; y++) {
 			for(int x = 0; x<width; x++) {
 				if(!visited[y][x]) {
-					count = 0;
-					visited[y][x] = true;
+					count = 0; //같은색이 몇개 있는지 저장하는 변수
+					visited[y][x] = true; //방문처리
 					dfs(y,x);
 					if(army[y][x].equals("B")) {
 						blue += count * count;
@@ -52,7 +54,7 @@ public class BOJ_S1303 {
 
 	}
 
-	public static void dfs(int y, int x) { // i = x , j = y
+	public static void dfs(int y, int x) { 
 		
 		String current = army[y][x];
 		count++;
@@ -69,6 +71,7 @@ public class BOJ_S1303 {
 
 	}
 
+	// 탐색 가능한지 판별하는 메소드
 	private static boolean isAvailable(String current, int nextY, int nextX) {
 		return nextX >= 0 && nextY >= 0 && nextX < width && nextY < height 
 				&& !visited[nextY][nextX] && current.equals(army[nextY][nextX]);

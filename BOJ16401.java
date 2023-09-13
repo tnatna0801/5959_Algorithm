@@ -29,7 +29,7 @@ public class Main {
 				start = mid + 1; // 시작 값은 mid+1로 갱신
 			} else // 조카의 수보다 적을 경우
 				end = mid - 1; // 끝 값을 mid-1로 갱신
-		}
+		} // 이진탐색을 반복하여 최종적으로 조카들에게 나눠줄 수 있는 최대의 과자 개수 ans를 도출합니다.
 		
 		System.out.println(ans); // ans 출력
 	}

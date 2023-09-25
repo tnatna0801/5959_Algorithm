@@ -8,7 +8,7 @@ public class BOJ10819 {
 	static boolean visited[];
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        N = Integer.parseInt(br.readLine());
+        N = Integer.parseInt(br.readLine()); // N 입력
         arr = new int[N];
         visited = new boolean[N];
         StringTokenizer st = new StringTokenizer(br.readLine());
